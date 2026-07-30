@@ -20,7 +20,7 @@ SOC Level 1 pathway.
 - [Vulnerability Assessment](./vulnerability-assessment)
 - [Incident Handler's Journal](./incident-handlers-journal)
 - [Text File Parsing](./text-file-parsing)
-
+- [Resume](./resume)
 
 
 
