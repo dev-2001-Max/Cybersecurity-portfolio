@@ -1,53 +1,31 @@
 # Linux File Permissions Management
 
 ## Objective
-Reviewed and updated file and directory permissions within a Linux research team's
-project directory to align access levels with organizational security requirements.
+Reviewed and updated file and directory permissions within a Linux project directory
+to align access levels with security requirements — checking existing permissions,
+interpreting the permission string, and applying targeted `chmod` changes.
 
-## Approach
+## Check current permissions and change file permissions
 
-### 1. Check current permissions
-Used `ls -la` to list all files/directories with their full permission strings, including
-hidden files:
-```
-ls -la
-```
-This revealed permission strings such as `-rw-rw-rw-` (project_k.txt), `-rw-r-----`
-(project_m.txt), and `drwx--x---` (drafts directory) — each representing read/write/
-execute access for user, group, and other.
+![Terminal showing ls -la output and chmod commands part 1](./images/terminal-ls-la-chmod-part1.png)
 
-### 2. Interpret the permission string
-Broke down the standard 10-character Linux permission string:
-- Character 1: file type (`d` = directory, `-` = file)
-- Characters 2–4: user (owner) permissions
-- Characters 5–7: group permissions
-- Characters 8–10: permissions for other (everyone else)
+Used `ls -la` to list all files and directories with full permission strings, including
+hidden files. Removed excess write access from `project_k.txt` for "other" using
+`chmod o-w project_k.txt`, since no external users should be able to modify files.
 
-### 3. Remove excess write access
-Identified that `project_k.txt` granted write access to "other," which violated the
-requirement that no external users should be able to modify files:
-```
-chmod o-w project_k.txt
-```
+## Change permissions on a hidden file and directory
 
-### 4. Adjust permissions on a hidden/archived file
-For an archived file (`.project_x.txt`), removed write access from both user and group
-while adding read access for the group, since the file was no longer being edited:
-```
-chmod u-w,g-w,g+r .project_x.txt
-```
+![Terminal showing ls -la output and chmod commands part 2](./images/terminal-ls-la-chmod-part2.png)
 
-### 5. Restrict directory access
-Removed group execute permissions on the `drafts` directory so only the designated
-owner (`researcher2`) retained access:
-```
-chmod g-x drafts
-```
+Adjusted `.project_x.txt` permissions using `chmod u-w,g-w,g+r .project_x.txt` to
+remove write access from user and group while adding group read access. Restricted
+the `drafts` directory using `chmod g-x drafts` so only the designated owner retained
+execute access.
 
 ## Summary
 Used `ls -la` to audit existing permissions, then applied targeted `chmod` changes to
-enforce least-privilege access — removing unnecessary write and execute permissions
-from files and a directory to match the organization's required access-control policy.
+enforce least-privilege access, removing unnecessary write and execute permissions to
+match required access-control policy.
 
 ## Skills Demonstrated
 Linux command-line administration, file permission auditing (`ls -la`), permission
