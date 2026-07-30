@@ -21,19 +21,6 @@ SOC Level 1 pathway.
 - [Incident Handler's Journal](./incident-handlers-journal)
 - [Text File Parsing](./text-file-parsing)
 
-Save the file (Ctrl+S).
 
-Now commit it
-
-In Git Bash (or use the Source Control icon in VS Code — your choice):
-
-bash
-git add .
-git commit -m "Add professional statement and portfolio structure"
-git push
-
-Once that's pushed, visit github.com/dev-2001-Max/Cybersecurity-portfolio in your browser — you should see this README rendered nicely as your homepage.
-
-Try that and let me know if the push works, or if it asks you anything unexpected.
 
 
