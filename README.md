@@ -13,6 +13,7 @@ SOC Level 1 pathway.
 📫 avishnudev2001@gmail.com | [LinkedIn](https://www.linkedin.com/in/vishnudev-a)
 
 ## Portfolio Contents
+- [SOC Writeups (Splunk BOTS v3)](./soc-writeups)
 - [Security Audit](./security-audit)
 - [Network Analysis](./network-analysis)
 - [Linux File Permissions](./linux-file-permissions)
