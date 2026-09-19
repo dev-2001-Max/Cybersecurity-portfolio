@@ -20,8 +20,10 @@ SOC Level 1 pathway.
 - [SQL Queries](./sql-queries)
 - [Vulnerability Assessment](./vulnerability-assessment)
 - [Incident Handler's Journal](./incident-handlers-journal)
+- [Wazuh SOC Lab (Detection Engineering)](./wazuh-soc-lab)
 - [Text File Parsing](./text-file-parsing)
 - [Resume](./resume)
+
 
 
 
