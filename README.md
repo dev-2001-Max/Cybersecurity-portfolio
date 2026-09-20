@@ -22,6 +22,7 @@ SOC Level 1 pathway.
 - [Incident Handler's Journal](./incident-handlers-journal)
 - [Wazuh SOC Lab (Detection Engineering)](./wazuh-soc-lab)
 - [Text File Parsing](./text-file-parsing)
+- [DVWA Web App Security](./dvwa-web-app-security)
 - [Resume](./resume)
 
 
