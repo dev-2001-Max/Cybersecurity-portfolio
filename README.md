@@ -10,7 +10,7 @@ Google Cybersecurity Professional Certificate holder, currently building further
 through CompTIA Security+, Splunk practice with the BOTS dataset, and the TryHackMe
 SOC Level 1 pathway.
 
-📫 avishnudev2001@gmail.com | [LinkedIn](https://www.linkedin.com/in/vishnudev-a)
+📫 Ammuppillyvishnudev@gmail.com| [LinkedIn](https://www.linkedin.com/in/vishnudev-a)
 
 ## Portfolio Contents
 - [SOC Writeups (Splunk BOTS v3)](./soc-writeups)
